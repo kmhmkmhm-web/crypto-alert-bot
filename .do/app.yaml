@@ -9,17 +9,17 @@ workers:
     
     envs:
       - key: TELEGRAM_TOKEN
-        value: "8295501088:AAHHwOCuRGhQyvFgnu6Kf0VsQaZEzr133R4"
+        value: "YOUR_TELEGRAM_TOKEN_HERE"
         scope: RUN_TIME
         type: SECRET
       
       - key: CHAT_ID
-        value: "8051329143"
+        value: "YOUR_CHAT_ID_HERE"
         scope: RUN_TIME
         type: SECRET
       
       - key: VELO_API_KEY
-        value: "95dfb6f119584a84aaadae6516c97e43"
+        value: "YOUR_VELO_API_KEY_HERE"
         scope: RUN_TIME
         type: SECRET
     
