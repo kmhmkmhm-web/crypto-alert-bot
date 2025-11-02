@@ -312,7 +312,7 @@ def main():
     analyze_coins()
     
     # Her 15 dakikada bir zamanla
-    schedule.every(15).minutes.do(job)
+    schedule.every(2).minutes.do(job)
     
     print("\n💤 Zamanlanmış görevler aktif. Her 15 dakikada bir kontrol edilecek...")
     
