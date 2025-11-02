@@ -10,7 +10,7 @@ from market_cap_cache import get_thresholds
 # Environment variables
 TELEGRAM_TOKEN = os.environ.get('TELEGRAM_TOKEN')
 CHAT_ID = os.environ.get('CHAT_ID')
-VELO_API_KEY = os.environ.get('VELO_API_KEY', '95dfb6f119584a84aaadae6516c97e43')
+VELO_API_KEY = os.environ.get('VELO_API_KEY')
 
 # Constants
 ALL_COINS = ['0GUSDT', '1MBABYDOGEUSDT', '1000000BOBUSDT', '1000000MOGUSDT', 
@@ -312,7 +312,7 @@ def main():
     analyze_coins()
     
     # Her 15 dakikada bir zamanla
-    schedule.every(2).minutes.do(job)
+    schedule.every(15).minutes.do(job)
     
     print("\n💤 Zamanlanmış görevler aktif. Her 15 dakikada bir kontrol edilecek...")
     
